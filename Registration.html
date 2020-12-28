@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Registration Form">
+    <meta name="keywords" content="sign up, registration">
+    <meta name="author" content="Hana Shakboua">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/04e03675f0.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Registration</title>
+</head>
+
+
+
+<body id="change-color-body">
+    <!--Start of Header-->
+    
+      
+        <div class="header">
+            
+            <a href="Registration.html"> <i class="fa fa-address-card-o" aria-hidden="true" id="spacers"></i>Form</a>
+            </div>
+      </div>
+    <!--End of Header-->
+
+      <!--Start Color Picker-->
+<div id="color-box">
+    <div id="change-color-div" onclick="click1();" style="background-color: red;"></div>
+    <div id="change-color-div" onclick=" click2();" style="background-color: green;"></div>
+    <div id="change-color-div" onclick=" click3();" style="background-color: yellow;"></div>
+    <div id="change-color-div" onclick=" click4();" style="background-color: blue;"></div>
+    <div id="change-color-div" onclick=" click5();" style="background-color: orange"></div>
+    <div id="change-color-div" onclick=" click6();" style="background-color: grey"></div>
+    <div id="change-color-div" onclick=" click7();" style="background-color: purple"></div>
+    <div id="change-color-div" onclick=" click8();" style="background-color: white;"></div>
+    </div>
+    <!--End Color Picker-->
+
+
+    <!--Start of form code-->
+    <div id="main-hana">
+
+        <div id="uname">
+            <div id="tit"> User Name:</div>
+            <div id="lef"><input type="text" id="usern" onchange="fun1()" placeholder="Enter Your UserName"></div>
+        </div>
+        <div id="usere"></div>
+
+        <div id="dof">
+            <div id="tit"> Date of Birth:</div>
+            <div id="lef"><input type="text" id="date" onchange="fun2()" placeholder="Enter Your DOB "> </div> 
+        </div>
+        <p id="birth"></p>
+
+        <div id="phone">
+            <div id="tit">Phone number:</div>
+            <div id="lef"><input type="text" id="numphone" onchange="fun3()" placeholder="Enter Your #phone "> </div>
+            </div>
+            <p id="num"></p>
+
+        <div id="ema">
+            <div id="tit">Email:</div>
+            <div id="lef"><input type="text" id="uemail" onchange="fun4()" placeholder="Enter Your Email "> </div>
+        </div>
+        <p id="emai"></p>
+
+        <div id="pass">
+            <div id="tit">Password:</div>
+            <div id="lef"><input type="text" id="passw" onchange="fun5()" placeholder="Enter Your Password "> </div>
+        </div>
+        <p id="password"></p>
+
+        <div id="pass2">
+            <div id="tit"> Confirm password: </div>
+            <div id="lef"> <input type="text" id="passw2" onchange="fun6()" placeholder="Confirm password"></div>
+        </div>
+        <p id="match"></p>
+
+
+        <div id="agree">
+            <p id="agreem"> <input type="radio" id="agre" onclick="fun7()">This <a href="privacy.html" target="_blank">Privacy Policy</a> applies to Bella.com,
+                when you use Bella Services (any Member) or Visitor to our Services.</p>
+        </div>
+        <p id="agr"></p>
+
+        <div id="btns">
+            <input type="button" id="store" value="save data" onclick="fun8()">  
+                           <!--maybe i should remove them -->
+            <input type="button" id="save" value="save data" onclick="fun9()">   
+              
+            <input type="button" id="remove" value="delete data" onclick="fun10()" >  
+            
+        </div>
+
+    </div>
+    <!--End of form code-->
+     <div id="final">
+    <img src="images/o.jpg" style="height: 20em; width: 100%;">
+  </div>
+    <!--Start Footer Code-->
+    <footer></footer>
+    <div id="fot1">
+        <a class="active" style="margin-right:5%;" >
+        <i class="fa fa-copyright fa-2x" aria-hidden="true">Copy right 2020</i></a>
+        <a class="active"><i class="fa fa-camera-retro fa-2x"></i></a>
+        <a class="active"> <i class="fa fa-facebook-official fa-2x"></i></a>
+        <a class="active"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+   </div>
+  
+   <!--End Footer Code-->
+    <script src="js/form.js"></script>
+    <script src="js/picker.js"></script>
+</body>
+
+</html>

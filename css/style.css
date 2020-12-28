@@ -1,0 +1,686 @@
+.screen{
+    /* width: 600px;  */
+    height: 400px; 
+    border: 40px solid black;
+    margin-top: 100px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    
+ }  
+ #lapscreen img{
+    /* width: 600px; */
+    height: 280px;   
+ }
+ .base{
+    /* width: 678px; */
+     height: 70px;
+   
+    margin-top:0px; 
+    background-color:rgb(190, 185, 185);
+ }
+ .screen i{
+    width: 10px; 
+    height: 10px;
+    margin-left: 45%;
+    margin-top: 10px;
+}
+#base1{width: 100px;
+       height: 30px; 
+       margin: auto;
+    }
+
+#base1 i{
+    margin-left: 20px;
+    color: black;
+}
+
+#fot1{
+    width: 100%;
+    height: 100px;
+    background-color:#eff0f7ea;
+    line-height: 100px;
+    margin: auto;
+    text-align: center;
+}
+.active{
+    margin-right: 10px; 
+}
+#navbar{
+    /* width: 100%; */
+    height: 70px;
+    background-color:#8860D0;
+    margin-bottom: 50px;
+    text-decoration: none; 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto" !important;
+   
+
+}
+ #navbar a{
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    font-size: 25px;
+    align-items: center;
+
+    line-height: 60px;
+   
+
+}
+#navbar img{
+    width:150px;
+    
+    height:100%;opacity: .8;
+}
+#navA {float: right;
+     margin-right: 5%; 
+     border: 2px solid white;
+     border-radius: 20px;
+      padding-right: 7px; 
+      padding-left: 7px;}
+
+ #navbar a:hover {
+  background-color:#5680E9;}
+ 
+
+  /* Calculator Page */
+
+  @media screen and (max-width: 500px) {
+    #bodycal {
+        width:550px
+    } 
+    
+}
+#bodycal {
+background-color: #f1ebeb;
+/* width:550px */
+
+} 
+#div1{
+background-color: #8860D0;
+width: 550px;
+height: 500px;
+margin: auto auto;
+border-radius: 50px;
+padding: 10px;
+}
+#container{
+width: 460px;
+height: 420px;
+margin: auto;
+background-color: #8860D0;
+margin-left: 20px;
+margin-top: 10px;
+}
+#types{
+width: 414px;
+height: 60px;
+background-color: #D9D9D9;
+border-radius: 10px;
+margin-left:25px ;
+font-size: 30px;
+box-shadow: 2px 2px black;
+}
+#clear{
+width: 180px;
+height: 50px;
+background-color:orange;
+border-radius: 10px;
+text-align: center;
+line-height: 50px;
+font-size: 20px;
+margin-top: 20px;
+cursor: pointer;
+box-shadow: 4px 4px black;
+}
+.one{
+width: 100px;
+height: 50px;
+background-color: #D9D9D9;
+margin-right: 5px;
+margin-top: 20px;
+border-radius: 10px;
+text-align: center;
+line-height: 50px;
+font-size: 30px;
+box-shadow: 3px 3px black;
+cursor: pointer;
+}
+#absolute{
+cursor: pointer;
+}
+#factorial{
+cursor: pointer;
+}
+#all h1{
+margin-top: 50%;
+margin-left: 60px;
+font-size: 50px;
+color: rgb(22, 22, 26);
+}
+#all{
+width: 100%;
+height: 750px;
+margin-top: 50px;
+/* display: flex; */
+}
+#div3 {
+display: flex;
+height:70px;
+width: 400px;
+margin: auto;}
+
+
+/* /////////////////////////////////////////////////////////////// */
+/* /////////////   (Start) To Do List - CSS  ///////////////////// */
+/* /////////////////////////////////////////////////////////////// */
+
+* {
+    box-sizing: border-box;
+  }
+.todo-container {
+  margin: 30px auto 0;
+  background-color: #F6F6F6;
+  width: 600px;
+}
+.todo-container .add-task {
+  padding: 15px;
+  background-color: #385A7C;
+  position: relative;
+}
+.todo-container .add-task input {
+  display: inline-block;
+  padding: 10px 15px;
+  border: none;
+  background-color: rgba(255, 255, 255, .3);
+  width: calc(100% - 15px);
+  color: #FFF;
+  font-size: 20px;
+}
+.todo-container .add-task input:focus {
+  outline: none;
+}
+.todo-container .add-task .plus {
+  position: absolute;
+  height: 43px;
+  width: 43px;
+  background-color: #FFF;
+  right: 12px;
+  border-radius: 50%;
+  line-height: 43px;
+  text-align: center;
+  color: #385A7C;
+  cursor: pointer;
+  font-size: 38px;
+  -webkit-transition: transform .3s;
+  -moz-transition: transform .3s;
+  transition: transform .3s;
+}
+.todo-container .add-task .plus:hover {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.todo-container .tasks-content {
+  padding: 15px;
+}
+.todo-container .tasks-content .no-tasks-message {
+  color: #777;
+  font-size: 15px;
+}
+.todo-container .tasks-content > span {
+  display: block;
+  background-color: #FFF;
+  padding: 10px;
+  cursor: pointer;
+  
+}
+.todo-container .tasks-content > span:not(:last-child) {
+  margin-bottom: 10px;
+}
+.todo-container .tasks-content .task-box .delete {
+  float: right;
+  background-color: #E91E63;
+  padding: 4px 10px;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.todo-container .tasks-content .task-box.finished {
+  text-decoration: line-through;
+}
+.task-stats {
+  overflow: hidden;
+  margin: 10px auto;
+  width: 600px;
+  font-size: 12px;
+}
+.task-stats .tasks-count {
+  width: 50%;
+  float: left;
+  padding: 10px;
+  margin: 10px 0px;
+  background-color: #BDD3CB;
+}
+.task-stats .tasks-completed {
+  width: 50%;
+  float: right;
+  padding: 10px;
+  margin: 10px 0px;
+  text-align: right;
+  background-color: #BDD3CB;
+}
+.task-stats .tasks-count span,
+.task-stats .tasks-completed span {
+  color: #FFF;
+  padding: 1px 5px;
+  font-size: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.task-stats .tasks-count span {
+  background-color: #E91E63;
+}
+.task-stats .tasks-completed span {
+  background-color: #03A9F4;
+}
+#btn1 {
+    width: 10em;
+    height: 3em;
+    align-items: center;
+    background-color: #E91E63;
+    padding: 4px 10px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer; 
+    margin-left: 40%;
+}
+
+/* /////////////////////////////////////////////////////////////// */
+/* /////////////   (End) To Do List - CSS    ///////////////////// */
+/* /////////////////////////////////////////////////////////////// */
+
+/* -------------------------------------------------------------- */
+
+/* /////////////////////////////////////////////////////////////// */
+/* /////////////   (Start) Color Picker - CSS    ///////////////// */
+/* /////////////////////////////////////////////////////////////// */
+
+#change-color-body {
+    background-color:white;
+}
+#color-box {
+    margin-left: 35%;
+}
+#change-color-div {
+  width: 50px;
+  height: 50px;
+  border: 5px solid black;
+  margin: auto auto;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  position: static;
+  display: inline-block;
+  align-items: center;
+  
+}
+
+/* /////////////////////////////////////////////////////////////// */
+/* /////////////    (End) Color Picker - CSS    ///////////////// */
+/* /////////////////////////////////////////////////////////////// */
+
+/* -------------------------------------------------------------- */
+
+
+/* /////////////////////////////////////////////////////////////// */
+/* /// (Start)  Validation page and Registration // css code   /// */
+/* /////////////////////////////////////////////////////////////// */
+
+
+button{
+  border-radius: 10px;
+}
+
+.screen i{
+  width: 10px; 
+  height: 10px;
+  margin-left: 45%;
+  margin-top: 10px;
+}
+
+
+  
+
+#myimage{
+  width: 100%;
+  height: 600px;
+}
+
+.screen{
+  width: 600px; height: 400px; 
+  border: 40px solid black;
+  margin-top: 100px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  
+}  
+#lapscreen img{
+  width: 600px;
+  height: 270px;   
+}
+.base{
+  width: 678px; height: 70px;
+ 
+  margin-top:0px; 
+  background-color:rgb(190, 185, 185);
+} 
+#navbar i{
+  color: white;
+}
+#base1{width: 100px;
+     height: 30px; 
+     margin: auto;}
+#base1 i{
+  margin-left: 20px;
+  color: black;
+}
+
+#divimg{
+  margin: auto;
+  width:100%;
+  height: 10%px}
+
+#main{
+display: flex;
+width: 100%;
+height: 10%;
+}
+
+#main1{
+width:800px; 
+height: 700px;
+margin-top: 5%;
+margin-left: 10%;}
+
+#main1 img{
+  width:400px; 
+  height:300px"
+}
+
+#main2{
+  width:800px;
+   height: 700px;
+
+}
+#h1{color: blue;
+  font-size: 50px;
+  margin-top: 15%;}
+
+#bt1{
+width: 210px;
+height: 50px;
+background-color:#5680E9;
+}
+#bt2{
+width: 210px;
+height: 50px;
+background-color:#8860D0 
+}
+
+
+
+#fot1{
+  width: 100%;
+  height: 100px;
+  background-color:#eff0f7ea;
+  line-height: 100px;
+  margin: auto;
+  text-align: center;
+
+
+
+
+}
+.active{
+  margin-right: 10px; 
+}
+
+table{
+  width: 100%;
+  height: 300px; 
+  padding: 30px;
+}
+td{
+  width: 50px;
+ 
+}
+
+/*---Starting Form CSS---*/
+#main-hana{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  width: 40%;
+  background-color: #e9e9e9;
+  text-justify: auto ;
+  border: 2px solid black;
+  border-radius: 10%;
+  padding:5%;
+  text-align: center;  
+}
+
+#main-hana > div {
+display:flex;
+}
+
+#tit {
+display:flex;
+flex-direction: row;
+flex:25%;
+float: left;
+/* border: 1px black solid; */
+text-align: left;
+margin-top:4%;
+height: 1.5em;
+font-weight: bold;
+
+}
+#lef{
+display:flex;
+flex-direction: row;
+flex:75%;
+float: right;
+/* border: 1px black solid; */
+margin-top:4%;
+height: 1.5em;
+font-weight: bold;
+}
+
+#usern {
+  width:50%;
+  border:1px #5680E9 solid;
+  font-size: 0.8em;
+  text-align: left;
+  }
+#date {
+  width:50%;
+  border:1px #5680E9 solid;
+  font-size: 0.8em;
+  text-align: left;
+}
+#numphone {
+  width:50%;
+  border:1px #5680E9 solid;
+  font-size: 0.8em;
+  text-align: left;
+}
+#uemail {
+  width:50%;
+  border:1px #5680E9 solid;
+  font-size: 0.8em;
+  text-align: left;
+}
+#passw {
+  width:50%;
+  border:1px #5680E9 solid;
+  font-size: 0.8em;
+  text-align: left;
+}
+#passw2 {
+  width:50%;
+  border:1px #5680E9 solid;
+  font-size: 0.8em;
+  text-align: left;
+} 
+
+#store {
+  width: 30%;
+  background-color:#84CEEB ;
+  color:rgb(22, 22, 26);
+  align-items: center;
+  display: block;
+  padding:2%;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+}
+#save {
+  width: 30%;
+  background-color: #84CEEB;
+  color: rgb(22, 22, 26);
+  align-items: center;
+  display: block;
+  padding:2%;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+}
+#remove {
+  width: 30%;
+  background-color: #84CEEB;
+  color:rgb(22, 22, 26);
+  align-items: center;
+  display: block;
+  padding:2%;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+}
+#btns > input {
+  /* margin:2%, 2%; */
+  margin:auto;
+}
+/*End css normal */
+
+/*Media Query*/
+/*Custmization media query*/
+@media (min-width:320px) and (max-width:1024px){ 
+      #main-hana >div > #tit{
+          display:none;
+      }  
+      #main-hana >div > #lef{
+          flex-direction: column;
+      }  
+      #main-hana{
+          display:block;
+          margin:0px;
+          width: 80%;
+          background-color: #BDD3CB;
+          text-justify:auto ;
+          border: 2px solid black;
+          border-radius: 10%;
+          padding:5%;  
+      }
+      
+  }    
+
+/*---Ending Form CSS---*/
+
+/*----Starting NEWEST Header CSS----*/
+* {box-sizing: border-box;}
+
+.header {
+overflow: hidden;
+background-color:#8860D0;
+padding: 10px;
+margin-bottom: 10px;
+height: 3%;
+display: block;
+}
+
+.header a {
+float:left;
+text-align: center;
+padding: 25px;
+padding-left: 10px;
+text-decoration: none;
+font-size: 1.25em; /*25px*/
+line-height: 1em;
+border-radius: 4px;
+color: white;
+margin-top:1px;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto" !important;
+}
+
+#ilogo{
+  float: left;
+  display: block;
+}
+#spacers{
+  padding-right: 10px;
+}
+.header a.logo {
+padding: 1px;
+height:2px;
+width:2px;
+opacity:0.8;
+margin-bottom: 2px;
+}
+
+.header a:hover {
+background-color: #5680E9;
+}
+
+/*.header a.active {
+background-color: dodgerblue;
+color: white;
+}*/
+
+.header-right {
+float: right;
+}
+
+@media screen and (max-width: 500px) {
+.header a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+
+.header-right {
+  float: none;
+}
+.log{
+    height:10px;
+    width:10px;
+}
+#final{
+  width: 100%;
+  height: 5%;
+}
+}
+/*----Ending Header CSS ---*/
+
+
+/* /////////////////////////////////////////////////////////////// */
+/* /// (End) Validation page and Registration // css code   /////// */
+/* /////////////////////////////////////////////////////////////// */
+
+
+/* -------------------------------------------------------------- */
